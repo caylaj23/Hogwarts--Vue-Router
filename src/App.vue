@@ -1,4 +1,5 @@
 <script setup>
+
 </script>
 
 <template>
@@ -14,7 +15,7 @@
       </nav>
     </header>
     <main>
-<router-view/>
+      <router-view />
     </main>
   </div>
 </template>
@@ -62,5 +63,4 @@ img {
 main {
   padding: 2rem;
 }
-
 </style>
