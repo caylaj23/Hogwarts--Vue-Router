@@ -28,28 +28,28 @@ function curriculumButton() {
     <div class="wizard-houses">
       <div class="gryffindor">
         <h2>Gryffindor</h2>
-        <img @click="() => { $router.push(`0367baf3-1cb6-4baf-bede-48e17e1cd005`) }"
-          src="/Users/cjohnson345/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-example-pt1-student/src/assets/gryffindor (1).png"
+        <img @click="() => { $router.push(`/house/0367baf3-1cb6-4baf-bede-48e17e1cd005`) }"
+          src="/Users/cjohnson345/Library/CloudStorage/OneDrive-Humana/Desktop/Vue Folder/Hogwarts- Vue Router/src/assets/thegryffindor.png"
           alt="gryffindor">
       </div>
 
       <div class="ravenclaw">
         <h2>Ravenclaw</h2>
-        <img @click="() => { $router.push(`805fd37a-65ae-4fe5-b336-d767b8b7c73a`) }"
-          src="/Users/cjohnson345/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-example-pt1-student/src/assets/ravenclaw.png"
+        <img @click="() => { $router.push(`/house/805fd37a-65ae-4fe5-b336-d767b8b7c73a`) }"
+          src="/Users/cjohnson345/Library/CloudStorage/OneDrive-Humana/Desktop/Vue Folder/Hogwarts- Vue Router/src/assets/ravenclaw.png"
           alt="ravenclaw">
       </div>
 
       <div class="hufflepuff">
         <h2>Hufflepuff</h2>
-        <img @click="() => { $router.push(`85af6295-fd01-4170-a10b-963dd51dce14`) }"
-          src="/Users/cjohnson345/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-example-pt1-student/src/assets/hufflepuff.png"
+        <img @click="() => { $router.push(`/house/85af6295-fd01-4170-a10b-963dd51dce14`) }"
+          src="/Users/cjohnson345/Library/CloudStorage/OneDrive-Humana/Desktop/Vue Folder/Hogwarts- Vue Router/src/assets/hufflepuff.png"
           alt="hufflepuff">
       </div>
       <div class="slytherin">
         <h2>Slytherin</h2>
-        <img @click="() => { $router.push(`a9704c47-f92e-40a4-8771-ed1899c9b9c1`) }"
-          src="/Users/cjohnson345/Library/CloudStorage/OneDrive-Humana/Desktop/vue-router-example-pt1-student/src/assets/slytherin.png"
+        <img @click="() => { $router.push(`/house/a9704c47-f92e-40a4-8771-ed1899c9b9c1`) }"
+          src="/Users/cjohnson345/Library/CloudStorage/OneDrive-Humana/Desktop/Vue Folder/Hogwarts- Vue Router/src/assets/slytherin.png"
           alt="slytherin">
       </div>
 

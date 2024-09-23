@@ -1,53 +1,51 @@
+ 
 <script setup>
-import {useRouter} from 'vue-router'
-import {ref} from "vue";
-
-const route = useRouter()
-
+import { useRoute } from 'vue-router';
+const route = useRoute()
+ 
+import { ref } from 'vue';
+ 
 let houseName = ref('')
 let houseColours = ref('')
 let houseFounder = ref('')
 let houseAnimal = ref('')
 let houseElement = ref('')
 let houseGhost = ref('')
-
-
-    fetch(`https://wizard-world-api.herokuapp.com/Houses/${route.params.id}`)
-        .then(response => {
-            return response.json()
-        })
-        .then(houseId => {
-            houseName.value = houseId.name
-            houseColours.value = houseId.colours
-            houseFounder.value = houseId.founder
-            houseAnimal.value = houseId.animal
-            houseElement.value = houseId.element
-            houseGhost.value = houseId.ghost
-        })
-
-
+ 
+fetch(`https://wizard-world-api.herokuapp.com/Houses/${route.params.id}`)
+.then(response => {
+    return response.json()
+})
+.then(house => {
+            houseName.value = house.name
+            houseColours.value = house.colours
+            houseFounder.value = house.founder
+            houseAnimal.value = house.animal
+            houseElement.value = house.element
+            houseGhost.value = house.ghost
+    
+})
+ 
 </script>
-
-
-
+ 
+ 
 <template>
-
-<p>{{ houseName}}</p>
-<p>{{ houseColours }}</p>
-<p>{{ houseFounder }}</p>
-<p>{{ houseAnimal }}</p>
-<p>{{ houseElement }}</p>
-<p>{{ houseGhost }}</p>
-
-
-
-
+    <div class="container">
+<p>House Name: {{ houseName}}</p>
+<p>House Colours:{{ houseColours }}</p>
+<p>House Founder:{{ houseFounder }}</p>
+<p>House Animal:{{ houseAnimal }}</p>
+<p>House Element:{{ houseElement }}</p>
+<p>House Ghost:{{ houseGhost }}</p>
+</div>
+ 
 </template>
-
-
+ 
+ 
+ 
 <style scoped>
-
-
-
-
+.container{
+    text-align: center;
+}
 </style>
+ 

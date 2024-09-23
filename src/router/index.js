@@ -21,8 +21,8 @@ const routes = [
     component: About
   },
   {
-    path: '/house: id',
-    name: 'houses',
+    path: '/house/:id',
+    name: 'house',
     component: HouseView
   }
 ]
@@ -30,6 +30,8 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: routes
+
+  
 })
 
 export default router
